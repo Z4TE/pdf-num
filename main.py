@@ -6,10 +6,10 @@ import io
 import os
 
 # フォント名 (小文字に統一)
-FONT_NAME = "cascadia" 
+FONT_NAME = "sfmono" 
 
 # TTFファイルのパス
-FONT_PATH = "CASCADIACODE.TTF" 
+FONT_PATH = "SF-Mono-Regular.ttf" 
 
 INPUT_PDF = ".pdf"
 OUTPUT_PDF = INPUT_PDF + "_numbered.pdf"
@@ -57,8 +57,8 @@ def add_numbers_to_odd_pages(input_pdf_path, output_pdf_path):
             text_to_insert = str(current_number)
             
             # 描画位置
-            x_position = 50 
-            y_position = page_height - 25
+            x_position = 16
+            y_position = page_height - 16
             
             can.drawString(x_position, y_position, text_to_insert)
             
